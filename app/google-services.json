@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "788858410302",
+    "project_id": "photoshareapp-fce81",
+    "storage_bucket": "photoshareapp-fce81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788858410302:android:4b122612a744eef829086f",
+        "android_client_info": {
+          "package_name": "com.example.photosharefirebasekt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788858410302-5451na7i8rg2ujvv6mvj5i2h5fqfn26r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvLF-4eFw1oLI9t9sBWZcY5n8R2xtgHWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788858410302-5451na7i8rg2ujvv6mvj5i2h5fqfn26r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

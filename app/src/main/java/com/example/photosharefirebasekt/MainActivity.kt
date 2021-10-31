@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.photosharefirebasekt.view.FeedActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         auth= FirebaseAuth.getInstance()
         val currentUser=auth.currentUser
         if(currentUser!=null) {
-            val intent=Intent(applicationContext,FeedActivity::class.java)
+            val intent=Intent(applicationContext, FeedActivity::class.java)
             startActivity(intent)
 
         }
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 val currentUser=auth.currentUser?.email.toString()
                 Toast.makeText(this,"Hoşgeldin $currentUser",Toast.LENGTH_SHORT).show()
                 //diger aktiviteye gidicez
-                val intent=Intent(applicationContext,FeedActivity::class.java)
+                val intent=Intent(applicationContext, FeedActivity::class.java)
                 startActivity(intent)
                 finish()
             }
@@ -53,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             //asenkron
             if(task.isSuccessful){
                 //diger aktiviteye gidicez
-                val intent=Intent(applicationContext,FeedActivity::class.java)
+                val intent=Intent(applicationContext, FeedActivity::class.java)
                 startActivity(intent)
                 finish()
             }

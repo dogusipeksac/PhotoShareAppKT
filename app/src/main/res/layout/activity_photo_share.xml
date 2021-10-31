@@ -5,11 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".PhotoShareActivity">
+    android:padding="10dp"
+    tools:context=".view.PhotoShareActivity">
 
+    <RelativeLayout
+
+        android:id="@+id/linear_layout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/upload_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:onClick="choseImage"
+            android:padding="10dp"
+            android:src="@drawable/upload" />
     <TextView
+        android:id="@+id/text_upload"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/upload_image"
+        android:text="Resim yüklemek için resime tıklayın"
         android:gravity="center"
-        android:text="foto paylaşma ativitye hoşgeldin"/>
+        android:textSize="15sp"
+        />
+
+        <EditText
+            android:id="@+id/explain_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_upload"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:hint="açıklama yazın" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/explain_editText"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:onClick="share"
+            android:text="paylaş" />
+    </RelativeLayout>
+
+
 </RelativeLayout>
